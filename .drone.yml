@@ -1,0 +1,11 @@
+---
+kind: pipeline
+name: alertmanager
+type: docker
+
+steps:
+- name: Build
+  image: plugins/docker
+  settings:
+    repo: registry.lukemilius.com/alertmanager
+    auto_tag: true
